@@ -1,0 +1,35 @@
+---
+title: "ChickWeight Dataset Plot"
+author: "Miheer More - 24222637"
+format: pdf
+execute: 
+  echo: false
+editor: visual
+---
+
+## Introduction
+
+The Chick Weight dataset is dataset is a built-in R dataset that records the weights of chicks measured over time (in days), under different diets. It is useful for exploring growth patterns and the effect of diet on chick development.
+
+## Data Description:-
+
+-   `Time`: the number of days since birth.
+-   `weight`: the weight of the chick in grams.
+-   `Diet`: a categorical variable indicating the type of diet (1 to 4).
+
+## Plot Description:-
+
+The plot below shows weight over time for chicks, colored by diet group. This helps us compare growth patterns across the four diets.
+
+```{r}
+suppressWarnings(library(ggplot2))
+# Create a line plot of weight over time grouped by chick and colored by diet
+ggplot(ChickWeight, aes(x = Time, y = weight, group = Chick, color = Diet)) +
+  geom_line(alpha = 0.5) +
+  labs(title = "Chick Growth Over Time by Diet",
+       x = "Time (days)",
+       y = "Weight (grams)") +
+  theme_minimal()
+```
+
+This line plot illustrates the variation in growth patterns among the four diets and shows how various chicks develop over time. It seems that some diets cause weight gain more quickly than others.
