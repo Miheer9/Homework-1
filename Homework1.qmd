@@ -19,7 +19,7 @@ The Chick Weight dataset is dataset is a built-in R dataset that records the wei
 
 ## Plot Description:-
 
-The plot below shows weight over time for chicks, colored by diet group. This helps us compare growth patterns across the four diets.
+The plot below shows weight over time for chicks, colored by diet group. This helps us compare growth patterns across the four.
 
 ```{r}
 suppressWarnings(library(ggplot2))
