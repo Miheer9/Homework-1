@@ -1,1 +1,2 @@
 # Homework-1
+The Chick Weight dataset is dataset is a built-in R dataset that records the weights of chicks measured over time (in days), under different diets. It is useful for exploring growth patterns and the effect of diet on chick development.
